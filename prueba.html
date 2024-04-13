@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!--logo-->
+        </div>
+        <div>
+<h1>Tecnología ATP</h1>
+<h2>Aprendré tecnología con los mejores y al alcance de tu mano</h2>
+</div>
+<nav>
+<a href="#Cursos">Cursos</a>
+<a href="#Docentes">Docentes</a>
+<a href="#Preguntas-frecuentes">Preguntas frecuentes</a>
+<a href="#Registrate">Registrate</a>
+</nav>
+    </header>
+    <main>
+        <section id="Cursos">
+            <a name="Cursos"></a>
+            <div>
+                <h1>Curso Front End</h1>
+            </div>
+            <div>
+                <h1>Curso Back End</h1>
+            </div>
+            <div>
+                <h1>Curso Full Stack</h1>
+            </div>
+        </section>
+        <section id="Docentes">
+            <a name="Docentes"></a>
+            <h1>Nuestros docentes</h1>
+            <ul>
+                <li>Claudio</li>
+                <li>Pamela</li>
+                <li>Tomás</li>
+                <li>Yamila</li>
+            </ul>
+        </section>
+        <section id="Preguntas-frecuentes">
+            <a name="Preguntas-frecuentes"></a>
+        </section>
+        <section id="Registrate">
+            <a name="Registrate"></a>
+            <h2>Preinscribite a nuestros cursos</h2>
+            <h3>Completá el formulario y un coordinador se comunicará para darte la bienvenida e indicarte los pasos a seguir</h3>
+            <form action="#" id="formregister" method="GET" novalidate>
+                <div class="form-control">
+                    <label for="firstname">Nombre</label>
+                    <input size="30" type="text" name="firstname" id="firstname" placeholder="María" required>
+                   </div>
+                    <div class="error" id="error-firstname"></div>
+                    <div class="form-control">
+                        <label>Apellido</label>
+                        <input size="100" type="text" name="lastname" id="lastname" placeholder="Gutierrez" required>
+                       </div>
+                       <div class="error" id="error-lastname" ></div>
+                       <div class="form-control">
+                           <label>Email</label>
+                           <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+                       </div>
+                       <div class="error" id="error-email"></div>
+                       <div class="form-control">
+                        <label id="birthdate">Fecha de Nacimiento</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                       </div>
+                       <div class="error" id="error-birthdate"></div>                        
+                       <div class="form-control">
+                           <select name="country" id="country" class="form-select">
+                           <option value="">Pais</option>
+                           <option value="AR">Argentina</option>
+                           <option value="BO">Bolivia</option>
+                           <option value="BR">Brasil</option>
+                           <option value="CH">Chile</option>
+                           <option value="CO">Colombia</option>
+                           <option value="EC">Ecuador</option>
+                           <option value="PY">Paraguay</option>
+                           <option value="PE">Peru</option>
+                           <option value="UY">Uruguay</option>
+                           <option value="VE">Venezuela</option>
+                       </select>
+                       </div>
+                       <div class="form-control">
+                        <label id="course">Curso</label>
+                        <input type="checkbox" name="Curso-Front-End" value="1">Curso-Front-End
+                        <input type="checkbox" name="Curso-Back-End" value="2">Curso-Back-End
+                        <input type="checkbox" name="Curso-Full-Stack" value="3">Curso-Full-Stack
+                       </div>
+                       <div class="error" id="error-course"></div>  
+                    </div>
+                    <div class="form-control">
+                        <select name="turno" id="turno" class="form-select">
+                        <option value="">Turno</option>
+                        <option value="mañana">mañana</option>
+                        <option value="tarde">tarde</option>
+                        <option value="noche">noche</option>
+                    </div>
+                    <div class="form-control">
+                        <label id="consulta">Consulta</label>
+                        <textarea name="comentario" rows="10" cols="40">Escribe tu consulta...</textarea>
+                        </div>
+                       <div class="form-terms">
+                           <div class="terms">
+                               <input type="checkbox" id="terms">
+                               <label for="terms">Acepto terminos y condiciones</label>
+                           </div>
+                       </div>
+                       <button type="submit">Registrate</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+<div>
+    <h3>Contacto</h3>
+    <a href="mailto:"></a>
+    <a href="tel:+"></a>
+    <a href="http://">Instagram</a>
+</div>
+    </footer>
+</body>
+</html>
