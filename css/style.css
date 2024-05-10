@@ -15,7 +15,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Nunito', sans-serif;
+    font-family: Roboto, 'Open Sans', sans-serif;
 }
 a{
     text-decoration: none;
@@ -25,6 +25,12 @@ h1{
     background-color: #f4f4f4;
     color:#010111;
     font-size: 2vb;
+    .league-spartan-<uniquifier> {
+        font-family: "League Spartan", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+      }
 }
 h2{
     color:#ae1833;
