@@ -48,3 +48,68 @@ p{
     flex-wrap:wrap;
     background-color:#f4f4f4;
 }
+
+/* Estilos aplicados al header-navbar */
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-text{
+    text-decoration: none;
+    color:#725cdf !important;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+/* Estilos que se aplican al footer */
+
+.footer {
+    background-color: lightblue;
+    
+}
+
+.footer-content {
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.footer-icons {
+    
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 35px;
+    
+}
+.fa-brands {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+ /* Colores de los iconos del footer*/
+
+ .fa-facebook {
+    color: blue;
+}
+
+.fa-whatsapp {
+    color: green;
+    
+}
+
+.fa-twitter {
+    color: blue;
+}
+
+.fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
