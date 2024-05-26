@@ -124,6 +124,7 @@ p{
 .error {
     margin-left: 20px;
 }
+
 .form-terms {
     margin-left: 20px; 
 }
@@ -131,4 +132,18 @@ p{
 button[type="submit"] {
     margin-left: 20px; 
     margin-bottom: 20px; 
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+    /* Estilo para dispositivos de escritorio */
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    /* Estilo para tablets */
+}
+
+@media screen and (max-width: 767px) {
+    /* Estilo para celulares */
 }
