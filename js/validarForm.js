@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById('formregister');
-    const mensajeError = document.getElementById('mensajeError');
+    const mensajeError = document.getElementById('error-message');
 
     formulario.addEventListener('submit', function (evento) {
         evento.preventDefault(); // Evita el envío del formulario para poder validarlo con Javascript
@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let email = document.getElementById('email').value;
         let birthdate = document.getElementById('birthdate').value;
         let country = document.getElementById('country').value;
-        let course = document.getElementById('course').checked;
-        let consulta = document.getElementById('consulta').value;
-        let terminos = document.getElementById('terminos').checked;
+        let cursos = document.querySelectorAll('input[name="Curso-Front-End"], input[name="Curso-Back-End"], input[name="Curso-Full-Stack"]');
+        let consulta = document.querySelector('textarea[name="comentario"]').value;
+        let terminos = document.getElementById('terms').checked;
 
         // Validación de los campos
         if (nombre.trim() === '') {
@@ -40,7 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        if (course === '') {
+        let cursoSeleccionado = false;
+        cursos.forEach(curso => {
+            if (curso.checked) {
+                cursoSeleccionado = true;
+            }
+        });
+        if (!cursoSeleccionado) {
             mensajeError.innerText = 'Elegí un curso, por favor.';
             return;
         }
