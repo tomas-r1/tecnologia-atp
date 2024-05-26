@@ -1,14 +1,15 @@
 :root{
-    --bg-color:#f4ecd8;
-    --primary-color:#725cdf ;
-    --secondary-color:#010111;
-    --third-color:#ae1833;
-    --third-bis-color:#fe7559;
-    --bg-input-color:#f4f4f4;
+    --bg-color: #f4ecd8;
+    --primary-color: #725cdf;
+    --secondary-color: #010111;
+    --third-color: #ae1833;
+    --third-bis-color: #fe7559;
+    --bg-input-color: #f4f4f4;
 }
 
 body{
-    background-color: #f4ecd8;
+    background-color: var(--bg-color);
+    margin: 0;
 }
 
 *{
@@ -16,103 +17,93 @@ body{
     box-sizing: border-box;
     font-family: Roboto, 'Open Sans', sans-serif;
 }
+
 a{
     text-decoration: none;
-    color:#725cdf;
+    color: var(--primary-color);
 }
+
 h1{
-    background-color: #f4f4f4;
-    color:#010111;
-    font-size: 2vb;
-    .league-spartan-<uniquifier> {
-        font-family: "League Spartan", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 800;
-        font-style: normal;
-      }
+    background-color: var(--bg-input-color);
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 h2{
-    color:#ae1833;
+    color: var(--third-color);
+    margin-left: 20px;
 }
+
 h3{
-    color:#fe7559;
+    color: var(--third-bis-color);
+    margin-left: 20px;
 }
+
 p{
-    color:#010111;
+    color: var(--secondary-color);
+    margin-left: 20px;
 }
 
-.cursos{
-    background-color:#f4ecd8;
+.cursos,
+.docentes,
+.preguntas-frecuentes,
+.registrate {
+    padding: 20px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-.docentes{
-    display: flex;
-    list-style:none;
-    gap: 60px;
-    flex-wrap:wrap;
-    background-color:#f4f4f4;
-}
-
-.preguntas-frecuentes{
-    background-color:#f4ecd8
-}
-
-.registrate{
-    background-color:#f4f4f4
-}
-
-/* Estilos aplicados al header-navbar */
 
 .navbar{
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-input-color);
 }
 
 .navbar-text{
     text-decoration: none;
-    color:#725cdf !important;
+    color: var(--primary-color);
     text-align: left;
     font-weight: bold;
-    
+    margin-left: 20px;
 }
-
-/* Estilos que se aplican al footer */
 
 .footer {
     background-color: lightblue;
-    
+    margin-left: 20px;
 }
 
 .footer-content {
-    display:flex;
+    display: flex;
     justify-content: center; 
     align-items: center;
-    
 }
 
 .footer-icons {
-    
-    display:flex;
+    display: flex;
     justify-content: center; 
     align-items: center;
     font-size: 35px;
-    
 }
+
 .fa-brands {
     margin-left: 10px;
     margin-right: 10px;
-
 }
- /* Colores de los iconos del footer*/
 
- .fa-facebook {
+.fa-facebook {
     color: blue;
 }
 
 .fa-whatsapp {
     color: green;
-    
 }
 
 .fa-twitter {
