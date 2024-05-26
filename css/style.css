@@ -37,7 +37,7 @@ h1{
 
 h2{
     color: var(--third-color);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 h3{
@@ -47,16 +47,16 @@ h3{
 
 p{
     color: var(--secondary-color);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .cursos,
 .docentes,
 .preguntas-frecuentes,
 .registrate {
-    padding: 20px;
+    padding: 10px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
 }
 
@@ -115,4 +115,20 @@ p{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.form-control {
+    margin-left: 20px;
+}
+
+.error {
+    margin-left: 20px;
+}
+.form-terms {
+    margin-left: 20px; 
+}
+
+button[type="submit"] {
+    margin-left: 20px; 
+    margin-bottom: 20px; 
 }
