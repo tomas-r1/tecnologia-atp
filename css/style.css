@@ -53,7 +53,8 @@ p{
 .cursos,
 .docentes,
 .preguntas-frecuentes,
-.registrate {
+.registrate,
+.row{
     padding: 10px;
     text-align: left;
     margin-left: 10px;
